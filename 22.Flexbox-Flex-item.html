@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            background-color: thistle;
+            text-align: center;
+            width: 150px;
+            height: 200px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+        .container{
+            width: 75%;
+            margin: 0 auto;
+            min-height: 600px;
+            display: flex;
+            background-color: black;
+            flex-direction: row; /*row, column*/
+            justify-content: flex-start; /*flex-end, flex-start, space-around, space-evenly, space-between*/
+            align-items: flex-start; /*stretch, center, flex-start, flex-end*/
+            flex-wrap: wrap; /*default: nowrap*/    
+        }
+
+        .box-1{
+            order: 3;
+            background-color: yellowgreen;
+            align-self: flex-start;
+            flex-grow: 1;
+        }
+
+        .box-2{
+            order: 1;
+            background-color: rebeccapurple;
+            align-self: flex-end;
+            flex-grow: 2;
+        }
+
+        .box-3{
+            order: 2;
+            background-color: violet;
+            flex-grow: 3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box box-1">
+            <h1>Article 1</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="box box-2">
+            <h1>Article 2</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="box box-3">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
